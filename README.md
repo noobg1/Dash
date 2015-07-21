@@ -1,1 +1,3 @@
 # Dash
+bower install
+gulp
