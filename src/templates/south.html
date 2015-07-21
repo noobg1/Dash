@@ -1,0 +1,146 @@
+<!-- Square card -->
+<style>
+  .demo-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+  }
+  .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background:
+      url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+  }
+  .mdl-text_right {
+  	text-align: left;
+  	display: inline;
+  }
+  .mdl-card__supporting-text {
+  	display: inline;
+  }
+  .mdl-tabs__tab-bar a {
+    text-decoration: none;
+  }
+  .mdl-tabs__panel button {
+    background: #F7772A;
+    color: #fff;
+  }
+  .mdl-tabs__panel button:hover {
+    background: #F7772A;
+    color: #fff;
+  }
+</style>
+
+<!--<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect pull-left">
+<!--<p>Menu</p>-->
+ <!-- <div class="mdl-tabs__tab-bar">
+      <a href="#/north" class="mdl-tabs__tab is-active">North Indian</a>
+      <a href="#/south" class="mdl-tabs__tab">South Indian</a>
+      <a href="#/chinese" class="mdl-tabs__tab">Chinese</a>
+      <a href="#/snacks" class="mdl-tabs__tab">Snacks</a>
+      <a href="#/juices" class="mdl-tabs__tab">Juices</a>
+  </div>
+ 
+  
+</div>-->
+
+<!--Dear awsome person, I am working hard to get it all working, then I will streemline and econamize markup css and js, I need some help with the auto centering tabs, any ideas-->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="../css/navbar.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">  
+</head>
+<body>
+<div class="layer">
+<nav class="navbar navbar-default slide-tab" role="navigation">
+  <div class="container-fluid scroll invisibar">
+      <ul class="nav navbar-nav breakscroll">
+       
+        <li><a href="#/north" class="mdl-tabs__tab is-active">North Indian</a></li>
+        <li><a href="#/chinese" class="mdl-tabs__tab">Chinese</a></li>
+        <li><a href="#/snacks" class="mdl-tabs__tab">Snacks</a></li>
+        <li><a href="#/juices" class="mdl-tabs__tab">Juices</a></li>
+        <li class="active"><a href="#/south" class="mdl-tabs__tab">South Indian</a></li>
+        <li><a href="#">Bar</a></li>
+        <li><a href="#">Thunder</a></li>
+        <li><a href="#">Flash</a></li>
+        <li><a href="#">Hotdog</a></li>
+        <li><a href="#">Bar</a></li>
+        <li><a href="#">Thunder</a></li>
+        <li><a href="#">Flash</a></li>
+        <li><a href="#">Hotdog</a></li>
+        <li><a href="#">Bar</a></li>
+        <li><a href="#">Thunder</a></li>
+        <li><a href="#">Flash</a></li>
+        <li><a href="#">Hotdog</a></li>
+        <li><a href="#">Bar</a></li>
+        <li><a href="#">Thunder</a></li>
+        <li><a href="#">Flash</a></li>
+        <li><a href="#">Hotdog</a></li>
+    </ul> 
+  </div>
+  
+</nav>
+  
+</div>
+ 
+  
+ <script type="text/javascript" src="../js/navbar.js"></script> 
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script> 
+<body> 
+
+<div  ng-controller="menuCtrl"> 
+
+
+  <div ng-repeat="x in menus  | filter:{category:'1'}">
+   <!-- {{ x.name + ', ' + x.cost }}-->
+
+    <div class="mdl-tabs__panel is-active" id="starks-panel" style="margin-top:10px;">
+    <div class="mdl-card mdl-shadow--2dp demo-card-square" layout="row">
+      <div class="mdl-card__title mdl-card--expand">
+        <h2 class="mdl-card__title-text">{{ x.name }}</h2>
+      </div>
+      <div class="mdl-text_right mdl-card__supporting-text" layout="row">
+    <font color="#f7772a" size="4">₹{{ x.cost }} &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp   </font>
+   <!-- Colored mini FAB button -->
+          <select class="selectpicker" >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+      
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored ">
+        <i class="material-icons">shopping cart</i>
+      </button>
+ 
+  </div>
+    </div>
+  </div>
+ 
+ <!-- <div class="col-lg-4 ">
+    <rd-widget>
+      <rd-widget-body classes="small no-padding">
+		<div class="table-responsive">
+			<center><img src="img/chats1.jpg" width="300" height="150"></center>
+        </div>    
+      </rd-widget-body>
+
+	  <table>
+		<tr>
+			
+			<td>&nbsp &nbsp {{ x.name + ' :' + x.cost }}</td>
+			<td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <select>
+				<option value="volvo">0</option>
+				<option value="saab">1</option>
+				<option value="mercedes">2</option>
+				<option value="audi">3</option>
+				</select>
+			</td>
+			
+		</tr>
+	  </table>
+	  </rd-widget>
+  </div>-->
+
+  </div>
+
+</div>
