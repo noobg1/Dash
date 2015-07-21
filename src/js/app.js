@@ -19,4 +19,8 @@ angular.module('Dash',['ui.router'])
 			url: '/south',
             templateUrl: '../src/templates/south.html'
 		})	
+		.state('user', {
+			url: '/user',
+            templateUrl: '../src/templates/user.html'
+		})	
 });
