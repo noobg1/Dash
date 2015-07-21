@@ -1,5 +1,4 @@
-<script type="text/javascript">
-  /*my lovely util functions*/
+/*my lovely util functions*/
 /*active class*/
 
 function activate() {
@@ -161,4 +160,3 @@ slideTab = { //main function
 $(function () {
   $(slideTab.init);
 });
-</script>
